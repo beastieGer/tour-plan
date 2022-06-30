@@ -1,0 +1,16 @@
+.menu {
+  background-color: $color-dark-blue;
+  color: $color-white;
+  padding: 31px 0;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__item {}
+
+  &__link {}
+}
