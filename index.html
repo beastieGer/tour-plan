@@ -5,11 +5,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Best Tour Plan - Hotel Booking</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link href="css/style.css" rel="stylesheet" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="container">
-				<div class="header-top">
+				<div class="header-wrapper">
 					<a class="logo" href="#">
 						<img
 							class="logo__image"
@@ -39,45 +48,43 @@
 					</a>
 					<!-- /.user -->
 				</div>
-				<!-- /.header-top -->
-				<nav class="header-menu">
-					<ul class="header-menu__items">
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="#">
-								All Deals
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="#"> Hotels </a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="#">
-								Activities
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="#">
-								Hotel Day Packages
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="#">
-								Restaurants
-							</a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="#"> Events </a>
-						</li>
-						<li class="header-menu__item">
-							<a class="header-menu__link" href="#">
-								Rodrigues
-							</a>
-						</li>
-					</ul>
-				</nav>
+				<!-- /.header-wrapper -->
 			</div>
 			<!-- /.container -->
 		</header>
 		<!-- /.header -->
+
+		<div class="menu">
+			<div class="container">
+				<nav class="menu">
+					<ul class="menu__items">
+						<li class="menu__item">
+							<a class="menu__link" href="#"> All Deals </a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"> Hotels </a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"> Activities </a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">
+								Hotel Day Packages
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"> Restaurants </a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"> Events </a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#"> Rodrigues </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- /.menu -->
 	</body>
 </html>
