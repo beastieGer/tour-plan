@@ -13,6 +13,11 @@ ul {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   // font-family: 'Nunito', sans-serif;
