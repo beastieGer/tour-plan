@@ -26,14 +26,14 @@ body {
   margin: 0 auto;
 }
 
-.header {
+.navbar {
   padding: 40px 0;
 }
-.header__search {
+.navbar__search {
   margin-left: 108px;
 }
 
-.header-wrapper {
+.navbar-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
