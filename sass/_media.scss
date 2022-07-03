@@ -76,6 +76,32 @@
   .menu {
     display: none;
   }
+
+  .rating {
+    display: none;
+  }
+
+  .hotel-info {
+    &__text {
+      max-width: fit-content;
+    }
+
+    &__name {
+      width: 100%;
+      margin-top: 10px;
+      margin-right: 0;
+    }
+
+    &__offer {
+      order: -1;
+    }
+  }
+
+  .stars {
+    flex-basis: content;
+    flex-grow: 1;
+    text-align: end;
+  }
 }
 
 @media(max-width: 576px) {

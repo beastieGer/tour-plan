@@ -7,6 +7,13 @@ a {
   color: inherit;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -21,6 +28,7 @@ img {
 body {
   font-family: 'Mulish', sans-serif;
   // font-family: 'Nunito', sans-serif;
+  background-color: $color-light-blue;
   color: $color-dark-333;
   margin: 0;
 }
