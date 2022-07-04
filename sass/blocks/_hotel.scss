@@ -3,6 +3,18 @@
   padding-bottom: 20px;
 
   &__rating {}
+
+  &-grid__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 
@@ -100,8 +112,8 @@
 }
 
 .slider {
-  // width: 728px;
-  // height: 450px;
+  width: 728px;
+  height: 450px;
 
   &-button {
     position: absolute;
