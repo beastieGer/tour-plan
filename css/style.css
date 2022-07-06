@@ -684,6 +684,93 @@ body {
   background-image: url(../../img/arrow-prev-secondary.svg);
 }
 
+.activities {
+  padding-top: 60px;
+  padding-bottom: 98px;
+}
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+.activities__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 57px;
+}
+
+.card {
+  width: 255px;
+  height: 255px;
+  padding: 24px 26px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.card::before {
+  content: "";
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.card__image {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+.card__button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  color: #FFFFFF;
+  padding: 7px 22px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 990px;
@@ -701,6 +788,10 @@ body {
 
   .hotel-grid__wrapper {
     gap: 10px;
+  }
+
+  .card {
+    width: 47%;
   }
 }
 @media (max-width: 992px) {
@@ -888,6 +979,14 @@ body {
     right: 50px;
     top: 46px;
   }
+
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .activities-wrapper {
+    gap: 20px;
+  }
 }
 @media (max-width: 576px) {
   .logo__image {
@@ -898,6 +997,10 @@ body {
 .hotel-slide__image {
     height: 250px;
   }
+
+  .card {
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
   .newsletter {
@@ -906,5 +1009,15 @@ body {
   }
   .newsletter__subscribe {
     width: 100%;
+  }
+
+  .activities {
+    padding-top: 27px;
+    padding-bottom: 41px;
+  }
+  .activities-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

@@ -15,6 +15,10 @@
   .hotel-grid__wrapper {
     gap: 10px;
   }
+
+  .card {
+    width: 47%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -205,6 +209,16 @@
     right: 50px;
     top: 46px;
   }
+
+
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    &-wrapper {
+      gap: 20px;
+    }
+  }
 }
 
 @media(max-width: 576px) {
@@ -218,6 +232,10 @@
   .hotel-slide__image {
     height: 250px;
   }
+
+  .card {
+    width: 100%;
+  }
 }
 
 @media(max-width: 400px) {
@@ -228,6 +246,15 @@
     &__subscribe {
       // max-width: 260px;
       width: 100%;
+    }
+  }
+
+  .activities {
+    padding-top: 27px;
+    padding-bottom: 41px;
+
+    &-wrapper {
+      justify-content: center;
     }
   }
 }
