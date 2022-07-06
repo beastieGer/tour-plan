@@ -95,11 +95,12 @@
   }
 }
 
-.swiper {
+.hotel-slider {
   // width: 728px;
   // height: 450px;
   position: relative;
   border-radius: 8px;
+  overflow: hidden;
 
   &::after {
     content: '';
@@ -145,3 +146,9 @@
     }
   }
 }
+
+
+// .swiper {
+//   width: 600px;
+//   height: 300px;
+// }
