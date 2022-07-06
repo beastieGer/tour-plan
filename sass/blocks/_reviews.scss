@@ -14,12 +14,11 @@
   }
 
   &__stars {
-    text-align: center;
+    text-align: center !important;
   }
 }
 
 .reviews-slider {
-
 
   &__item {
     max-width: 731px;
@@ -100,6 +99,7 @@
     border-radius: 8px;
     text-align: justify;
     margin: auto;
+    padding: 0 15px;
   }
 }
 
