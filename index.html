@@ -14,10 +14,14 @@
 		/>
 
 		<link href="css/swiper-bundle.min.css" rel="stylesheet" />
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
 		<link href="css/style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<header class="navbar">
+		<header class="navbar navbar--mobile-fixed">
 			<div class="container">
 				<div class="navbar-wrapper">
 					<a class="logo" href="#">
@@ -28,7 +32,10 @@
 						/>
 					</a>
 
-					<form class="search navbar__search" action="#">
+					<form
+						class="search navbar__search search--mobile-hidden"
+						action="#"
+					>
 						<input
 							class="search__input"
 							type="text"
@@ -39,7 +46,7 @@
 						</button>
 					</form>
 
-					<a class="user" href="#">
+					<a class="user user--mobile-hidden" href="#">
 						<img
 							class="user__avatar"
 							src="img/user-avatar.jpg"
@@ -60,7 +67,7 @@
 		</header>
 		<!-- /.header -->
 
-		<nav class="menu">
+		<nav class="menu" data-aos="fade-left">
 			<div class="container">
 				<ul class="menu__items">
 					<li class="menu__item">
@@ -89,7 +96,7 @@
 		</nav>
 		<!-- /.menu -->
 
-		<nav class="breadcrumb">
+		<nav class="breadcrumb" data-aos="fade-right">
 			<div class="container">
 				<ul class="breadcrumb-list">
 					<li class="breadcrumb-list__item">
@@ -106,7 +113,7 @@
 		</nav>
 		<!-- /.breadcrumb -->
 
-		<section class="hotel">
+		<section class="hotel" data-aos="fade-up">
 			<div class="container">
 				<div class="hotel-info">
 					<div class="hotel-info__text">
@@ -135,7 +142,7 @@
 		</section>
 		<!-- /.hotel -->
 
-		<div class="hotel-grid">
+		<div class="hotel-grid" data-aos="fade-down">
 			<div class="container">
 				<div class="hotel-grid__wrapper">
 					<div class="slider hotel-grid__slider">
@@ -549,11 +556,21 @@
 
 		<section class="newsletter">
 			<div class="newsletter-wrapper">
-				<h2 class="newsletter__title">
+				<h2
+					class="newsletter__title"
+					data-aos="fade-right"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine"
+				>
 					subscribe to our
 					<span class="newsletter__title--strong">Newsletter</span>
 				</h2>
-				<form class="subscribe newsletter__subscribe" action="#">
+				<form
+					class="subscribe newsletter__subscribe"
+					action="#"
+					data-aos="fade-left"
+					data-aos-delay="200"
+				>
 					<input
 						class="subscribe__input"
 						type="text"
@@ -626,7 +643,7 @@
 			<div class="container">
 				<h2 class="activities__title">Other Activities</h2>
 				<div class="activities-wrapper">
-					<div class="card">
+					<div class="card" data-aos="fade-left" data-aos-delay="100">
 						<img
 							class="card__image"
 							src="img/card/activite-1.jpeg"
@@ -638,7 +655,7 @@
 						<button class="card__button">Book Now</button>
 					</div>
 					<!-- ./ card -->
-					<div class="card">
+					<div class="card" data-aos="fade-left" data-aos-delay="400">
 						<img
 							class="card__image"
 							src="img/card/activite-2.jpeg"
@@ -648,7 +665,7 @@
 						<button class="card__button">Book Now</button>
 					</div>
 					<!-- ./ card -->
-					<div class="card">
+					<div class="card" data-aos="fade-left" data-aos-delay="600">
 						<img
 							class="card__image"
 							src="img/card/activite-3.jpeg"
@@ -660,7 +677,7 @@
 						<button class="card__button">Book Now</button>
 					</div>
 					<!-- ./ card -->
-					<div class="card">
+					<div class="card" data-aos="fade-left" data-aos-delay="800">
 						<img
 							class="card__image"
 							src="img/card/activite-4.jpeg"
@@ -865,7 +882,54 @@
 			</div>
 		</footer>
 
+		<div class="modal hide">
+			<div class="modal__overlay"></div>
+			<!-- /.modal__overlay -->
+			<div class="modal__dialog">
+				<a class="modal__close" href="#!">
+					<svg class="icon">
+						<use xlink:href="img/sprite.svg#close"></use>
+					</svg>
+				</a>
+				<h3 class="modal__title">Booking</h3>
+				<form class="modal__forms forms" action="#">
+					<input
+						class="input forms__input"
+						type="text"
+						placeholder="Your Full Name*"
+						required
+					/>
+					<input
+						class="input forms__input"
+						type="tel"
+						placeholder="Phone Number* +7 (999) 999-99-99"
+						pattern="\+7[0-9]{3}[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+						required
+					/>
+					<input
+						class="input forms__input"
+						type="email"
+						placeholder="Email*"
+						pattern="[a-z]{1,15}@[a-z]{1,8}.[a-z]{1,4}"
+					/>
+					<textarea
+						class="forms__message"
+						placeholder="Message"
+					></textarea>
+					<div class="forms__box">
+						<button class="button forms__button" type="submit">
+							Send
+						</button>
+						<span class="forms__info"> * Required Fields </span>
+					</div>
+				</form>
+			</div>
+			<!-- /.modal__dialog -->
+		</div>
+		<!-- /.modal -->
+
 		<script src="script/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="script/main.js"></script>
 	</body>
 </html>

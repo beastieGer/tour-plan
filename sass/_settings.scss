@@ -25,6 +25,14 @@ img {
   object-fit: cover;
 }
 
+.hide {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   // font-family: 'Nunito', sans-serif;
